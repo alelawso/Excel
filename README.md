@@ -58,8 +58,8 @@ Credit: https://www.thespreadsheetguru.com/blog/add-real-time-stock-prices-and-m
     End Sub
 
     Sub AddHeaders()
-'AddHeaders Macro
-'Places headers on worksheet'
+    'AddHeaders Macro
+    'Places headers on worksheet'
 
         Rows("1:1").Select
         Selection.Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
