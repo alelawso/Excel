@@ -1,20 +1,18 @@
 # Excel VBA
 
 # VBA formula for automatically refreshing external stock data whenever the workbook is opened.
+    Private Sub Workbook_Open()
+    'PURPOSE: Run Data tab's Refresh All function
+       
+       ThisWorkbook.RefreshAll
 
-Private Sub Workbook_Open()
-'PURPOSE: Run Data tab's Refresh All function
+       MsgBox "Stock Data has been refreshed!" 'Optional
 
-ThisWorkbook.RefreshAll
-
-MsgBox "Stock Data has been refreshed!" 'Optional
-
-End Sub
+    End Sub
 
 Credit: https://www.thespreadsheetguru.com/blog/add-real-time-stock-prices-and-metrics-to-excel
 
 # Automate Sum Funcion
-
     Public Sub AutomateSum()
 
         Dim lastCell As String
