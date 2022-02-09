@@ -198,7 +198,7 @@ End Sub
 
 # Sorting Records
 
-Public Sub UserSortInput()
+    Public Sub UserSortInput()
     Dim userInput As String
     Dim promptMSG As String
     Dim tryAgain As Integer
@@ -224,40 +224,31 @@ Public Sub UserSortInput()
         End If
     End If
     
-End Sub
-Sub DivisionSort()
-'
-' Sort List by Division Ascending
-'
+    End Sub
 
-'
-    Selection.Sort Key1:=Range("A4"), Order1:=xlAscending, Header:=xlGuess, _
-        OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
-        DataOption1:=xlSortNormal
+    Sub DivisionSort()
+    ' Sort List by Division Ascending'
 
-End Sub
+        Selection.Sort Key1:=Range("A4"), Order1:=xlAscending, Header:=xlGuess, _
+            OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
+            DataOption1:=xlSortNormal
 
-Sub CategorySort()
-'
-' Sort List by Category Ascending
-'
+    End Sub
 
-'
-    Selection.Sort Key1:=Range("B4"), Order1:=xlAscending, Header:=xlGuess, _
-        OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
-        DataOption1:=xlSortNormal
+    Sub CategorySort()
+    ' Sort List by Category Ascending'
 
-End Sub
+        Selection.Sort Key1:=Range("B4"), Order1:=xlAscending, Header:=xlGuess, _
+            OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
+            DataOption1:=xlSortNormal
 
-Sub TotalSort()
-'
-' Sort List by Total Sales Ascending
-'
+    End Sub
 
-'
-    Selection.Sort Key1:=Range("F4"), Order1:=xlAscending, Header:=xlGuess, _
-        OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
-        DataOption1:=xlSortNormal
+    Sub TotalSort()
+    'Sort List by Total Sales Ascending'
 
-End Sub
+        Selection.Sort Key1:=Range("F4"), Order1:=xlAscending, Header:=xlGuess, _
+            OrderCustom:=1, MatchCase:=False, Orientation:=xlTopToBottom, _
+            DataOption1:=xlSortNormal
 
+    End Sub
