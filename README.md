@@ -1,6 +1,6 @@
 # Excel VBA
-
-# VBA formula for automatically refreshing external stock data whenever the workbook is opened.
+VBA formula for automatically refreshing external stock data whenever the workbook is opened.
+    
     Private Sub Workbook_Open()
     'PURPOSE: Run Data tab's Refresh All function
        
@@ -13,6 +13,7 @@
 Credit: https://www.thespreadsheetguru.com/blog/add-real-time-stock-prices-and-metrics-to-excel
 
 # Automate Sum Funcion
+
     Public Sub AutomateSum()
 
         Dim lastCell As String
@@ -43,19 +44,20 @@ Credit: https://www.thespreadsheetguru.com/blog/add-real-time-stock-prices-and-m
 
 # Cleaning up Data
 
-Public Sub CleanUpData()
-    Dim i As Integer
-    i = 1
-    Do While i <= Worksheets.Count
+    Public Sub CleanUpData()
+        Dim i As Integer
+        i = 1
+        Do While i <= Worksheets.Count
             Worksheets(i).Select
             
-            AddHeaders
-            FormatHeader
+                AddHeaders
+                FormatHeader
             
-            i = i + 1
-    Loop
-End Sub
-Sub AddHeaders()
+                i = i + 1
+        Loop
+    End Sub
+
+    Sub AddHeaders()
 '
 ' AddHeaders Macro
 ' Places headers on worksheet
